@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">   
+
+{% load static %}
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Currency converter app</title>
+</head>
+<body style="overflow: hidden">
+    <div class="navbar navbar-expand-1g fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a href="../" class="navbar-brand">Currency converter<span style="color: rgb(39,117,161);">
+                <strong>App</strong>
+            </span></a>
+            <a href="#" class="navbar-tech">[ Django Project ]</a>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top: -50px;">
+        <h1 id="devise" class="display-5">Devise</h1>
+        <h5>Conversion Rate Calculator</h5>
+        <img src="{}" class="image" style="width: 100px; margin: px;">
+    </div>
+    <div class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-sm-15">
+                    <h1 style="align-content: center;"></h1>
+                    <p class="lead" style="margin-left: 280px; font-size: 2rem;">
+                 </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="currency">
+             <select class="form-control" id="currency-one">
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="USD" selected>USD</option>
+             </select>
+             <br>
+             <input type="number" id="amount-one" value="1" style="width: 100%;"/>
+            </div>
+        </div>
+        <br>
+        <div class="swap-btn">
+            <button type="button" id="swap" class="btn btn-outline-primary mx-auto d-block">Swap<i class="fa fas-refresh"
+            arial-hidden="true"></i></button>
+        </div>
+        <div class="rate" id="rate" style="color: aqua"></div>
+        <br>
+        <div class="container">
+            <div class="currency">
+                <select class="form-control" id="currency-two">
+                    <option value="AED">AED</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="USD" selected>USD</option>   
+                </select>
+                <br>
+                <input type="number" id="amount-one" value="1" style="width: 100%;"/>
+            </div>
+        </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-1g-12" style="text-align: center">
+                <p>Designed by <a href="">moldays &copy; 2024</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
